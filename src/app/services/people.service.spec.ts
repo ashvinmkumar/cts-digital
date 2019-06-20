@@ -1,9 +1,13 @@
 import { TestBed } from '@angular/core/testing';
+import { HttpClientModule } from '@angular/common/http';
 import { PeopleService } from './people.service';
 
 describe('PeopleService', () => {
   beforeEach(() =>
-    TestBed.configureTestingModule({ providers: [PeopleService] })
+    TestBed.configureTestingModule({
+      imports: [HttpClientModule],
+      providers: [PeopleService]
+    })
   );
 
   it('should be created', () => {
