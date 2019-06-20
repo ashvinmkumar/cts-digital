@@ -1,3 +1,7 @@
+I have used angular 8 to create this project.
+I have used a simple component which is used to display all the cats and a service to fetch the data.
+To display the cat list, first the json list is filtered for gender and then iterated to filter out the cats.
+
 # CtsDigital
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
