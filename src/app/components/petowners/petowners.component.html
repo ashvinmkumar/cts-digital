@@ -1,0 +1,9 @@
+<h1>{{ filter | titlecase }} List</h1>
+<div *ngFor="let gender of uniqueGender" class="gender">
+  <h3>{{ gender }}</h3>
+  <ul *ngFor="let pet of animalList" class="pets">
+    <li *ngIf="pet && pet.ownerGender === gender" class="pet">
+      <span>{{ pet.name }}</span>
+    </li>
+  </ul>
+</div>
